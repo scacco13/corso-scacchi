@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sito Multidisciplinare – Versione Femminile</title>
+
+    <style>
+        /* ------------------------------
+                   PALETTE FEMMINILE
+        -------------------------------*/
+        :root{
+            --bg1:#ffe6f2;
+            --bg2:#ffd1ec;
+            --bg3:#f4c4f3;
+            --accent1:#ff5fa2;
+            --accent2:#b565d9;
+            --text:#5a4a57;
+            --white:#ffffff;
+        }
+
+        body{
+            margin:0;
+            font-family: "Poppins", sans-serif;
+            background: var(--bg1);
+            color: var(--text);
+            scroll-behavior: smooth;
+        }
+
+        /* ------------------------------
+                   HEADER
+        -------------------------------*/
+        header{
+            background: linear-gradient(90deg, var(--bg3), var(--bg2));
+            padding:25px 40px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            position:sticky;
+            top:0;
+            z-index:999;
+            box-shadow:0 3px 10px #0002;
+        }
+
+        header h1{
+            font-size:30px;
+            color: var(--accent1);
+            text-shadow:0 0 8px #fff;
+            margin:0;
+            font-weight:700;
+        }
+
+        nav a{
+            margin:0 18px;
+            text-decoration:none;
+            color:var(--text);
+            font-weight:600;
+            transition:.3s;
+        }
+
+        nav a:hover{
+            color:var(--accent1);
+            text-shadow:0 0 6px var(--accent1);
+        }
+
+        /* ------------------------------
+                   SEZIONI
+        -------------------------------*/
+        section{
+            padding:80px 10%;
+            border-bottom: 2px dashed var(--bg3);
+        }
+
+        h2{
+            font-size:40px;
+            color: var(--accent2);
+            margin-bottom:15px;
+            text-shadow:0 0 10px #fff7;
+        }
+
+        .card{
+            background: var(--white);
+            padding:25px;
+            margin:25px 0;
+            border-radius:18px;
+            box-shadow:0 0 20px #0001;
+            border-left:6px solid var(--accent1);
+            transition:.3s;
+        }
+
+        .card:hover{
+            transform:scale(1.02);
+            box-shadow:0 0 30px #0003;
+        }
+
+        /* ------------------------------
+                   FOOTER
+        -------------------------------*/
+        footer{
+            background: var(--bg2);
+            padding:30px;
+            text-align:center;
+            color: var(--text);
+            font-weight:600;
+            margin-top:20px;
+            box-shadow:0 -3px 12px #0002;
+        }
+
+        /* ------------------------------
+                   RESPONSIVE
+        -------------------------------*/
+        @media(max-width:800px){
+            header{
+                flex-direction:column;
+                gap:10px;
+            }
+            h2{
+                font-size:30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sito Multidisciplinare</h1>
+    <nav>
+        <a href="#agenda">Agenda 2030</a>
+        <a href="#math">Matematica</a>
+        <a href="#english">English</a>
+        <a href="#sistemi">Sistemi</a>
+        <a href="#tps">TPS</a>
+        <a href="#informatica">Informatica</a>
+    </nav>
+</header>
+
+<!-- AGENDA 2030 -->
+<section id="agenda">
+    <h2>Agenda 2030 – Obiettivi 7, 11, 14</h2>
+
+    <div class="card">
+        <h3>Obiettivo 7 – Energia pulita</h3>
+        <p>Punta ad aumentare l’uso delle energie rinnovabili e migliorare l’efficienza energetica.</p>
+    </div>
+
+    <div class="card">
+        <h3>Obiettivo 11 – Città sostenibili</h3>
+        <p>Vuole rendere le città più verdi, sicure, inclusive e con trasporti più ecologici.</p>
+    </div>
+
+    <div class="card">
+        <h3>Obiettivo 14 – Vita sott’acqua</h3>
+        <p>Mira a proteggere gli oceani dalla plastica, dall’inquinamento e dalla pesca incontrollata.</p>
+    </div>
+</section>
+
+<!-- MATEMATICA -->
+<section id="math">
+    <h2>Matematica – Funzioni Esponenziali e Logaritmiche</h2>
+
+    <div class="card">
+        <h3>Funzione esponenziale</h3>
+        <p>Ha forma <b>N(t) = N a^t</b>. Cresce rapidamente ed è usata per popolazioni, virus, e fermentazione del vino.</p>
+    </div>
+
+    <div class="card">
+        <h3>Funzione logaritmica</h3>
+        <p>È l’inversa dell’esponenziale. Cresce lentamente ed è usata nelle scale logaritmiche.</p>
+    </div>
+
+    <div class="card">
+        <h3>Andamenti e tendenze</h3>
+        <p>Analizzano come i dati cambiano nel tempo: crescita veloce, lenta, decrescita, stabilizzazione.</p>
+    </div>
+</section>
+
+<!-- ENGLISH -->
+<section id="english">
+    <h2>English – SDG 16</h2><div class="card">
+<h3>SDG 16 – Peace, Justice, and Strong Institutions</h3>
+<p>
+SDG 16 promotes peace, justice, human rights, and transparent institutions.
+It aims to end violence and corruption and ensure equal access to justice.
+
+</p>
+</div>
+</section>
+
+<!-- SISTEMI -->
+<section id="sistemi">
+    <h2>Sistemi – GDPR in Italia</h2>
+
+    <div class="card">
+        <h3>Cos’è il GDPR?</h3>
+        <p>
+            Il GDPR è il regolamento europeo che stabilisce come devono essere trattati i dati personali.
+            In Italia è applicato tramite il Codice Privacy aggiornato.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Principi fondamentali</h3>
+        <p>
+            • Trasparenza nel trattamento  
+            • Minimizzazione dei dati  
+            • Sicurezza e protezione  
+            • Responsabilità del titolare  
+        </p>
+    </div>
+</section>
+
+<!-- TPS -->
+<section id="tps">
+    <h2>TPS – Cittadini e Pubblica Amministrazione</h2>
+
+    <div class="card">
+        <h3>Rapporto tra cittadini e PA</h3>
+        <p>
+            I cittadini hanno diritto a servizi digitali chiari, accessibili e sicuri.
+            La Pubblica Amministrazione deve garantire trasparenza, protezione dei dati
+            e comunicazioni semplici ed efficienti.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Digitalizzazione dei servizi</h3>
+        <p>
+            Grazie allo SPID, CIE e PagoPA i cittadini possono accedere ai servizi online
+            in modo più rapido e sicuro.
+        </p>
+    </div>
+</section>
+
+<!-- INFORMATICA -->
+<section id="informatica">
+    <h2>Informatica – Il rispetto delle regole a scuola</h2>
+
+    <div class="card">
+        <h3>Regole digitali e sicurezza</h3>
+        <p>
+            A scuola è importante usare correttamente computer, rete e dispositivi:
+            niente accessi non autorizzati, niente condivisione di dati personali,
+            nessun uso improprio delle password.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Comportamento online</h3>
+        <p>
+            • Rispetto reciproco  
+            • Niente cyberbullismo  
+            • Linguaggio adeguato  
+            • Uso responsabile della tecnologia  
+        </p>
+    </div>
+</section>
+
+<footer>
+    Sito realizzato da L'Amante e Frattarelli
+</footer>
+
+</body>
+</html>
